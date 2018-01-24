@@ -29,46 +29,69 @@ padding-left: 30px;
 color: MediumAquamarine;
 }
 
+nav {
+  padding-right: 40px;
+}
+
 nav span {
   padding: 20px 10px;
   display: inline-block;
 }
 
+a {
+  color: black;
+}
+
 
 .maincontainer {
   display: flex;
-  justify-content: space-around;
-  overflow: scroll;
-  align-content: space around;
-}
-
-.column.large {
-  display: inline-flex;
-  width: 630px;
-  justify-content: space-around;
-  t
-}
-
-.column.medium {
-  display: inline-flex;
-  width: 300px;
-  justify-content: space-around;
-}
-
-.column.small {
-  display: inline-flex;
-  width: 240px;
-  justify-content: space-around;
-  flex-direction: column;
-  margin: 0px;
-  border-top: medium none black;
-  border-bottom:medium none black;
+  width:1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
 }
 
 div {
-  border: solid;
+  border: 1px solid black;
 }
 
+.column{
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.larger {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.mainstory .image {
+    width: 630px;
+    margin-top: 0;
+    font-size: 40px;
+    text-align: left;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+}
 h2 {
   font-weight: bold;
 }
@@ -80,34 +103,16 @@ font-size: 17px;
 color: black;
 }
 
-.image {
-  display: flex;
-}
 
-h3 {
-font-family: Georgia;
- font-weight: bold;
- font-size: 30px;
- color: white;
-}
-
-.mainstory {
- font-family: Georgia;
- font-weight: bold;
- font-size: 40px;
- color: white;
- background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
-}
-
-.earthstory {
+ .earthstory.image  {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
 }
 
-.camerastory {
+.image.camerastory {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
 }
 
-.catstory {
+.image.catstory {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
 }
 
